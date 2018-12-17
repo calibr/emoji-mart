@@ -520,7 +520,7 @@ export default class NimblePicker extends React.PureComponent {
           {this.getCategories().map((category, i) => {
             return (
               <Category
-                ref={this.setCategoryRef.bind(this, `category-${i}`)}
+                realRef={this.setCategoryRef.bind(this, `category-${i}`)}
                 key={category.name}
                 id={category.id}
                 name={category.name}

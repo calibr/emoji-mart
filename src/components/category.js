@@ -21,6 +21,10 @@ export default class Category extends React.Component {
     this.margin = 0
     this.minMargin = 0
 
+    if(this.props.realRef) {
+      this.props.realRef(this)
+    }
+
     this.memoizeSize()
   }
 
